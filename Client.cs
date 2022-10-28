@@ -80,4 +80,52 @@ class Client
 
 
     }
+    public void CreateCreditCard(string TypeCard)
+    {
+        string[] ListCard =
+        {
+            "VisaStandard", "VisaGold", "MastercardGold", "MastercardPlatinum", "JCBGold", "JCBUltimate"
+        };
+        if (TypeCard == ListCard[0])
+        {
+            InternationalCreditCard A = new VisaStandard();
+            listCredit.Add(A.Typecard, A);
+            Console.WriteLine("Tao the thanh cong!");
+        }
+        else
+        if(TypeCard == ListCard[1])
+        {
+            InternationalCreditCard B = new VisaGold();
+            listCredit.Add(B.Typecard, B);
+            Console.WriteLine("Tao the thanh cong!");
+        }
+        else
+        if (TypeCard == ListCard[2])
+        {
+            InternationalCreditCard B = new MastercardGold();
+            listCredit.Add(B.Typecard, B);
+            Console.WriteLine("Tao the thanh cong!");
+        }
+        else
+        if (TypeCard == ListCard[3])
+        {
+            InternationalCreditCard B = new MastercardPlatinum();
+            listCredit.Add(B.Typecard, B);
+            Console.WriteLine("Tao the thanh cong!");
+        }
+        else
+        if (TypeCard == ListCard[4])
+        {
+            InternationalCreditCard B = new JCBGold();
+            listCredit.Add(B.Typecard, B);
+            Console.WriteLine("Tao the thanh cong!");
+        }
+        else
+        if (TypeCard == ListCard[5])
+        {
+            InternationalCreditCard B = new JCBUltimate();
+            listCredit.Add(B.Typecard, B);
+            Console.WriteLine("Tao the thanh cong!");
+        }
+    }
 }
